@@ -1,0 +1,85 @@
+.modalHasilBackground {
+    width: 50%;
+    height: 50%;
+
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -22rem;
+  }
+  
+  .modalHasilContainer {
+    width: 500px;
+    height: 100%;
+    border-radius: 12px;
+    background-color: #9D1717;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    /* padding: 25px; */
+  }
+  
+  .modalHasilContainer .modalTitle {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Playfair Display SC Regular";
+    color: white;
+  }
+  
+  .modalHasilContainer p{
+    font-family: "Sen Regular";
+    color: white;
+    /* font-size: 20px; */
+  }
+
+  .modalTitleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .modalTitleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .modalHasilContainer .modalBody {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  
+  .modalHasilContainer .modalFooter {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalHasilContainer .modalFooter button {
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-image: linear-gradient(to right, #c0732f, #b9865a, #c0732f );
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .modalFooter button{
+      font-family: "San Regular";
+  }
+  
+  
+  #cancelKananBtn {
+    background-color: crimson;
+  }

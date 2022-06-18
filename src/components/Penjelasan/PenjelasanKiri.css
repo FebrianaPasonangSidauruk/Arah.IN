@@ -1,0 +1,63 @@
+.penjelasanKiri{
+    background-image: url(/src/components/Pic/background.png); 
+    height: 100vh;
+    /* width: 100%; */
+    background-size: 300px;
+ }
+
+ .btn-penjelasan{
+    font-size: 1rem;
+    padding: 10px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 2rem;
+    cursor:pointer;
+    position:relative;
+    transition: all 0.35s;
+    outline: none;
+    margin-left: 20%;
+    background-image: linear-gradient(to right, #5d001f, #8c1b2a, #5d001f );
+    outline: 1px solid #ce953a;
+    outline-offset: -7px;
+}
+ 
+ .penjelasanKiri-container{
+     
+    /* display: flex; */
+     /* align-items: center;
+     justify-self: center; */
+     /* background-color: brown; */
+     /* height: 50%; */
+     /* width: 50%; */
+     position: relative;
+  top: 10%;
+  left: 20%;
+  /* left: 60%;
+  transform: translate(-50%, -50%); */
+
+     /* margin: 0 auto; */
+     
+     /* margin: 0 auto;
+     height: 88vh;
+     z-index: 1;
+     width: 100%;
+     max-width: 1200px; */
+     /* padding: 0 50px; */
+ }
+
+ .gbr-penjelasan{
+     background: brown;
+     background-size: cover;
+     width: 60%;
+    height: 40%;
+ }
+
+ .gbr-penjelasan img{
+    background:brown;
+     
+     height: 40%;
+     width: 100%;
+     /* align-items: center;
+     justify-self: center; */
+ }

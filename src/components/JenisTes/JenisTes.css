@@ -1,0 +1,99 @@
+.Jenistes{
+  background-image: url(/src/components/Pic/background.png);
+  height: 100vh;
+    width: 100vw;
+    background-size: 300px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.jenis-tes{
+    display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin: 0 8rem;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+}
+
+.JenisTes-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.column-jenis{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    /* width: 80%; */
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    background-color: brown;
+    gap: 5rem;
+}
+
+.gambar-jenis img{
+    width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.column-jenis{
+    float: left;
+    /* width:33.33%;
+    margin-left: 10%; */
+}
+
+.jenis-tes::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.column-jenis:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.gambar-jenis{
+    margin-bottom: 1rem;
+}
+
+.nama-tes{
+    display: flex;
+        color: #222222;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+}
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+    .Jenistes{
+        margin: 2rem;
+        background-image: url(/src/components/Pic/background.png);
+        height: 100%;
+          width: 100%;
+    }
+
+    .JenisTes-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .jenistes{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        width: 50%;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        background-color: brown;
+    }
+  }
