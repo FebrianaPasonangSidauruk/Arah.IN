@@ -32,6 +32,11 @@
     text-decoration: none;
     margin: 20px;
   }
+
+  .logout{
+    color: white;
+    cursor: pointer;
+  }
   
   .navbar .rightSide button {
     background-color: transparent;

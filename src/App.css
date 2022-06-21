@@ -1,40 +1,141 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"); */
+/* .App{
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
 } */
+
+
+@font-face {
+  font-family: 'Rose Knight Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Rose Knight Regular'), url('./assets/fonts/RoseknightRegular-8ML5A.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Sen Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sen Regular'), url('./assets/fonts/Sen-Regular.woff') format('woff');
+}
+      
+@font-face {
+  font-family: 'Sen Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sen Bold'), url('./assets/fonts/Sen-Bold.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Sen ExtraBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sen ExtraBold'), url('./assets/fonts/Sen-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Playfair Display Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Playfair Display Regular'), url('./assets/fonts/PlayfairDisplay-Regular.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Playfair Display Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Playfair Display Italic'), url('./assets/fonts/PlayfairDisplay-Italic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Playfair Display Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Playfair Display Bold'), url('./assets/fonts/PlayfairDisplay-Bold.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Playfair Display Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Playfair Display Bold Italic'), url('./assets/fonts/PlayfairDisplay-BoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Playfair Display Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Playfair Display Black'), url('./assets/fonts/PlayfairDisplay-Black.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Playfair Display Black Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Playfair Display Black Italic'), url('./assets/fonts/PlayfairDisplay-BlackItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Playfair Display SC Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Playfair Display SC Regular'), url('./assets/fonts/PlayfairDisplaySC-Regular.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Playfair Display SC Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Playfair Display SC Italic'), url('./assets/fonts/PlayfairDisplaySC-Italic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Playfair Display SC Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Playfair Display SC Bold'), url('./assets/fonts/PlayfairDisplaySC-Bold.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Playfair Display SC Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Playfair Display SC Bold Italic'), url('./assets/fonts/PlayfairDisplaySC-BoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Playfair Display SC Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Playfair Display SC Black'), url('./assets/fonts/PlayfairDisplaySC-Black.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Playfair Display SC Black Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Playfair Display SC Black Italic'), url('./assets/fonts/PlayfairDisplaySC-BlackItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Adine Kirnberg';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Adine Kirnberg'), url('./assets/fonts/Adine-Kirnberg.ttf') format('truetype');
+}
+
+
 
 

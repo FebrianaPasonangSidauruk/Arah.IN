@@ -25,7 +25,10 @@ function Navbar() {
             <Link to="/beranda"> Beranda </Link>
             <Link to="/jenistes"> Tes </Link>
             <Link to="/Tentang"> Tentang </Link>
-            <Link to="/login"> Logout </Link>
+            <div className="logout" onClick={handleLogout}>
+					Logout
+				</div>
+            {/* <Link to="/login"> Logout </Link> */}
             {/* <div className='logout' onClick={handleLogout}>Logout</div> */}
             </div>
         </div>
@@ -33,7 +36,10 @@ function Navbar() {
             <Link to="/beranda"> Beranda </Link>
             <Link to="/jenistes"> Tes </Link>
             <Link to="/Tentang"> Tentang </Link>
-            <Link to="/login"> Logout </Link>
+            <div className="logout" onClick={handleLogout}>
+					Logout
+				</div>
+            {/* <Link to="/login"> Logout </Link> */}
             {/* <div className='logout' onClick={handleLogout}>Logout</div> */}
             <button onClick={toggleNavbar}>
               <img src={burger} />

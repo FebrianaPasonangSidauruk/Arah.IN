@@ -17,15 +17,35 @@ import {useState} from 'react';
 import JenisTes from './components/JenisTes/JenisTes';
 
 
+//fonts
+import './assets/fonts/RoseknightRegular-8ML5A.woff';
+import './assets/fonts/Sen-Regular.woff';
+import './assets/fonts/Sen-Bold.woff';
+import './assets/fonts/Sen-ExtraBold.woff';
+import './assets/fonts/PlayfairDisplay-Regular.woff';
+import './assets/fonts/PlayfairDisplay-Italic.woff';
+import './assets/fonts/PlayfairDisplay-Bold.woff';
+import './assets/fonts/PlayfairDisplay-BoldItalic.woff';
+import './assets/fonts/PlayfairDisplay-Black.woff';
+import './assets/fonts/PlayfairDisplay-BlackItalic.woff';
+import './assets/fonts/PlayfairDisplaySC-Regular.woff';
+import './assets/fonts/PlayfairDisplaySC-Italic.woff';
+import './assets/fonts/PlayfairDisplaySC-Bold.woff';
+import './assets/fonts/PlayfairDisplaySC-BoldItalic.woff';
+import './assets/fonts/PlayfairDisplaySC-Black.woff';
+import './assets/fonts/PlayfairDisplaySC-BlackItalic.woff';
+import './assets/fonts/Adine-Kirnberg.ttf';
+
+
 function App() {
   const user = localStorage.getItem("token");
   return (
     <Routes>
-			{user && <Route path="/beranda" exact element={<Beranda />} />}
+			{user && <Route path="/" exact element={<Beranda />} />}
 			<Route path="/register" exact element={<Register />} />
 			<Route path="/login" exact element={<Login />} />
-			<Route path="/" element={<Navigate replace to="/beranda" />} />
-
+      <Route path="/" element={<Navigate replace to="/login" />} />
+			
       <Route path = "/Tentang" exact element={<Tentang />} />
       <Route path = "/PilihanTes" exact element={<PilihanTes />} />
       <Route path ="/tes" exact element={<Tes />} />
