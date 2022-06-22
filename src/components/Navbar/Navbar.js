@@ -3,9 +3,10 @@ import logoNavbar from '../Pic/logoNavbar.png';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import burger from '../Pic/burger.svg';
+import { useNavigate } from 'react-router-dom';
 
 function Navbar() {
-
+  const history = useNavigate()
   const toggleNavbar = () => {
     setOpenLinks(!openLinks) //opposite of what currently is
   }
@@ -13,7 +14,7 @@ function Navbar() {
 
   const handleLogout = () => {
     localStorage.removeItem("token");
-    window.location.reload();
+    history("/")
 };
 
   return (
@@ -22,7 +23,7 @@ function Navbar() {
         <div className="leftSide" id={openLinks ? "open" : "close"}>  
             <img src={logoNavbar} />
             <div className='hiddenLinks'>
-            <Link to="/beranda"> Beranda </Link>
+            <Link to="/"> Beranda </Link>
             <Link to="/jenistes"> Tes </Link>
             <Link to="/Tentang"> Tentang </Link>
             <div className="logout" onClick={handleLogout}>
@@ -33,7 +34,7 @@ function Navbar() {
             </div>
         </div>
         <div className='rightSide'>
-            <Link to="/beranda"> Beranda </Link>
+            <Link to="/"> Beranda </Link>
             <Link to="/jenistes"> Tes </Link>
             <Link to="/Tentang"> Tentang </Link>
             <div className="logout" onClick={handleLogout}>

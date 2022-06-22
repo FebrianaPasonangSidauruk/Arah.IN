@@ -43,11 +43,6 @@ export default function Tes() {
                     answerText: 'Tidak Setuju',
                     type: '',
                     isCorrect: false
-                    // isCorrectR: false,
-                    // isCorrectA: false,
-                    // isCorrectS: false,
-                    // isCorrectE: false,
-                    // isCorrectC: false
                 },
             ],
         },
@@ -64,11 +59,6 @@ export default function Tes() {
                     answerText: 'Tidak Setuju',
                     type: '',
                     isCorrect: false
-                    // isCorrectR: false,
-                    // isCorrectI: false,
-                    // isCorrectS: false,
-                    // isCorrectE: false,
-                    // isCorrectC: false
                 },
             ],
         },
@@ -85,11 +75,6 @@ export default function Tes() {
                     answerText: 'Tidak Setuju',
                     type: '',
                     isCorrect: false
-                    // isCorrectR: false,
-                    // isCorrectI: false,
-                    // isCorrectA: false,
-                    // isCorrectE: false,
-                    // isCorrectC: false
                 },
             ],
         },
@@ -106,11 +91,6 @@ export default function Tes() {
                     answerText: 'Tidak Setuju',
                     type: '',
                     isCorrect: false
-                    // isCorrectR: false,
-                    // isCorrectI: false,
-                    // isCorrectA: false,
-                    // isCorrectS: false,
-                    // isCorrectC: false
                 },
             ],
         },
@@ -127,11 +107,6 @@ export default function Tes() {
                     answerText: 'Tidak Setuju',
                     type: '',
                     isCorrect: false
-                    // isCorrectR: false,
-                    // isCorrectI: false,
-                    // isCorrectA: false,
-                    // isCorrectS: false,
-                    // isCorrectE: false
                 },
             ],
         },
@@ -148,11 +123,6 @@ export default function Tes() {
                     answerText: 'Tidak Setuju',
                     type: '',
                     isCorrect: false
-                    // isCorrectE: false,
-                    // isCorrectI: false,
-                    // isCorrectA: false,
-                    // isCorrectS: false,
-                    // isCorrectC: false
                 },
             ],
         },
@@ -169,11 +139,6 @@ export default function Tes() {
                     answerText: 'Tidak Setuju',
                     type: '',
                     isCorrect: false
-                    // isCorrectE: false,
-                    // isCorrectI: false,
-                    // isCorrectR: false,
-                    // isCorrectS: false,
-                    // isCorrectC: false
                 },
             ],
         },
@@ -190,11 +155,6 @@ export default function Tes() {
                     answerText: 'Tidak Setuju',
                     type: '',
                     isCorrect: false
-                    // isCorrectE: false,
-                    // isCorrectI: false,
-                    // isCorrectA: false,
-                    // isCorrectS: false,
-                    // isCorrectR: false
                 },
             ],
         },
@@ -211,11 +171,6 @@ export default function Tes() {
                     answerText: 'Tidak Setuju',
                     type: '',
                     isCorrect: false
-                    // isCorrectR: false,
-                    // isCorrectI: false,
-                    // isCorrectA: false,
-                    // isCorrectS: false,
-                    // isCorrectC: false
                 },
             ],
         },
@@ -241,22 +196,6 @@ export default function Tes() {
             setScore({ ...scores, [type]: specific_value })
         }
         if (nextQuestion == questions.length) {
-
-            // if (scoreR > (scoreI && scoreA && scoreS && scoreE && scoreC)) {
-            //     scoreText = "you are realistic type";
-            // } else if (scoreI > (scoreR && scoreA && scoreS && scoreE && scoreC)) {
-            //     scoreText = "you are investigative type";
-            // } else if (scoreA > (scoreR && scoreI && scoreS && scoreE && scoreC)) {
-            //     scoreText = "you are artistic type";
-            // } else if (scoreS > (scoreR && scoreA && scoreI && scoreE && scoreC)) {
-            //     scoreText = "you are social type";
-            // } else if (scoreE > (scoreR && scoreA && scoreS && scoreI && scoreC)) {
-            //     scoreText = "you are enterprising type";
-            // } else if (scoreC > (scoreR && scoreA && scoreS && scoreE && scoreI)) {
-            //     scoreText = "you are conventional type";
-            // } else {
-            //     scoreText = "testest"
-            // }
 
             axios.post("http://localhost:4000/api/updateRiasec", {
                 hasilRiasec: [
@@ -285,7 +224,7 @@ export default function Tes() {
                         percentage: scores.C + "%",
                     },
                 ]
-              }, { withCredentials: true });
+              });
             setShowScore(true);
         }
         // console.log(scores)
@@ -338,12 +277,6 @@ export default function Tes() {
                         <Link to="/hasil">
                             <button className="tombolHasil"> Cek Hasil! </button>
                         </Link>
-                        
-                            {/* <button className="tombolHasil" onClick={() =>{
-                                setOpenHasil(true);
-                            }}> Cek Hasil! </button>
-                        {openHasil && <DataHasil operHasil ={setOpenHasil}/>} */}
-                        {/* {scoreText} */}
                     </div>
                 ) : (
                     <>
