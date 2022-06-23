@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-// import playHasil from './Pic/playHasil.svg';
 import {BsPlayCircle} from 'react-icons/bs'
 import './HasilChild.css'
 import { Link } from 'react-router-dom';
@@ -46,35 +45,6 @@ const HasilChild = ({key, icon, skill, percentage, batas, penjelasan, ubahKanan}
                 </div>
         </div>
     </div>
-
-        /* <div className='hasil-content'>
-            <div className='hasil-left'>
-            <Link to="/">
-                <BsPlayCircle style={{fontSize:'3rem', color:'#B48336'}}/>
-                {icon}
-                </Link>
-            </div>
-            <div className='hasil-right'>
-                <h1>{skill}</h1>
-                <div className='bag-kanan'>
-                <Link to="/">
-                <BsPlayCircle style={{fontSize:'3rem', color:'#B48336'}}/>
-                {icon}
-                </Link>
-                
-                
-                </div>
-                <div className='skill-bar'>
-                    <div className='progress' style={style}>
-                        <span>{percentage}</span>
-                    </div>
-                </div>
-            </div>
-            <div className='border-kiri'>
-            <img src={simbol} alt="Simbol"/>
-            </div>
-        </div> */
-    
   )
 }
 

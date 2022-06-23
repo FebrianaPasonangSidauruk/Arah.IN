@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import logoNavbar from '../Pic/logoNavbar.png';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
@@ -14,38 +14,35 @@ function Navbar() {
 
   const handleLogout = () => {
     localStorage.removeItem("token");
+    localStorage.removeItem("id");
     history("/")
-};
+  };
 
   return (
     //if openLinks is == true, then id = open, else id = close
     <div className="navbar">
-        <div className="leftSide" id={openLinks ? "open" : "close"}>  
-            <img src={logoNavbar} />
-            <div className='hiddenLinks'>
-            <Link to="/"> Beranda </Link>
-            <Link to="/jenistes"> Tes </Link>
-            <Link to="/Tentang"> Tentang </Link>
-            <div className="logout" onClick={handleLogout}>
-					Logout
-				</div>
-            {/* <Link to="/login"> Logout </Link> */}
-            {/* <div className='logout' onClick={handleLogout}>Logout</div> */}
-            </div>
+      <div className="leftSide" id={openLinks ? "open" : "close"}>
+        <img src={logoNavbar} />
+        <div className='hiddenLinks'>
+          <Link to="/"> Beranda </Link>
+          <Link to="/jenistes"> Tes </Link>
+          <Link to="/Tentang"> Tentang </Link>
+          <div className="logout" onClick={handleLogout}>
+            Logout
+          </div>
         </div>
-        <div className='rightSide'>
-            <Link to="/"> Beranda </Link>
-            <Link to="/jenistes"> Tes </Link>
-            <Link to="/Tentang"> Tentang </Link>
-            <div className="logout" onClick={handleLogout}>
-					Logout
-				</div>
-            {/* <Link to="/login"> Logout </Link> */}
-            {/* <div className='logout' onClick={handleLogout}>Logout</div> */}
-            <button onClick={toggleNavbar}>
-              <img src={burger} />
-            </button>
+      </div>
+      <div className='rightSide'>
+        <Link to="/"> Beranda </Link>
+        <Link to="/jenistes"> Tes </Link>
+        <Link to="/Tentang"> Tentang </Link>
+        <div className="logout" onClick={handleLogout}>
+          Logout
         </div>
+        <button onClick={toggleNavbar}>
+          <img src={burger} />
+        </button>
+      </div>
     </div>
   );
 }

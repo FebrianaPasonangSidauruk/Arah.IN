@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './Tes.css';
 import { Link } from 'react-router-dom';
-import Hasil from '../Hasil/Hasil';
-import DataHasil from '../DataHasil';
-import ModalBatal from './ModalBatal';
 import axios from "axios";
 
 export default function Tes() {
@@ -22,11 +19,6 @@ export default function Tes() {
                     answerText: 'Tidak Setuju',
                     type: '',
                     isCorrect: false
-                    // isCorrectI: false,
-                    // isCorrectA: false,
-                    // isCorrectS: false,
-                    // isCorrectE: false,
-                    // isCorrectC: false
                 },
             ],
         },
@@ -180,8 +172,6 @@ export default function Tes() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [showScore, setShowScore] = useState(false);
     const [scores, setScore] = useState({ R: 0, I: 0, A: 0, S: 0, E: 0, C: 0 });
-    var scoreText = "text";
-    // scoreR, scoreI, scoreA, scoreS, scoreE, scoreC,
 
     const handleAnswerOptionClick = (isCorrect, type) => {
         const nextQuestion = currentQuestion + 1;
@@ -197,79 +187,55 @@ export default function Tes() {
         }
         if (nextQuestion == questions.length) {
 
-            axios.post("http://localhost:4000/api/updateRiasec", {
+            const response = axios.post(`http://localhost:4000/api/updateRiasec/${localStorage.getItem("id")}`, {
                 hasilRiasec: [
                     {
                         id: '1',
+                        skill: 'Realistic',
                         percentage: scores.R + "%",
                     },
                     {
                         id: '2',
+                        skill: 'Investigative',
                         percentage: scores.I + "%",
                     },
                     {
                         id: '3',
+                        skill: 'Artistic',
                         percentage: scores.A + "%",
                     },
                     {
                         id: '4',
+                        skill: 'Social',
                         percentage: scores.S + "%",
                     },
                     {
                         id: '5',
+                        skill: 'Enterprising',
                         percentage: scores.E + "%",
                     },
                     {
                         id: '6',
+                        skill: 'Conventional',
                         percentage: scores.C + "%",
                     },
                 ]
-              });
+            }, { withCredentials: true });
             setShowScore(true);
+            return response
         }
-        // console.log(scores)
     };
 
     useEffect(() => {
-        //console.log(Object.keys(scores), Object.values(scores));
         console.log(scores)
     }, [scores])
 
-    // const handleAnswerOptionClick = (type) => {
-    // 	if (type ==='R') {
-    // 		setScoreR(scoreR + 1);
-    // 	}
-
-    // 	const nextQuestion = currentQuestion + 1;
-    // 	if (nextQuestion < questions.length) {
-    // 		setCurrentQuestion(nextQuestion);
-    // 	} else {
-    // 		setShowScore(true);
-    // 	}
-    // };
-
-    // const handleAnswerOptionClick = (isCorrect) => {
-    // 	if (isCorrect) {
-    // 		setScore(score + 1);
-    // 	}
-
-    // 	const nextQuestion = currentQuestion + 1;
-    // 	if (nextQuestion < questions.length) {
-    // 		setCurrentQuestion(nextQuestion);
-    // 	} else {
-    // 		setShowScore(true);
-    // 	}
-    // };
     return (
         <div className='testing'>
             <div className='button-Bataltes'>
                 <Link to="/PilihanTes">
                     <button className="tombol-batal"> Batal </button>
                 </Link>
-                {/* <button className="tombol-batal" onClick={() =>{
-                                setOpenBatal(true);
-                            }}> Batal </button>
-                        {openBatal && <ModalBatal closeModalBatal ={setOpenBatal}/>} */}
             </div>
             <div className='app'>
                 {showScore ? (

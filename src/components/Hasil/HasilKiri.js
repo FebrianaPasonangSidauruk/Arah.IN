@@ -5,7 +5,7 @@ import './HasilKiri.css';
 import './HasilChild';
 import HasilChild from './HasilChild';
 import simbol from '../Pic/simbol.png';
-import tes from '../Tes/Tes';
+import tes from '../TesKuliah/TesKuliah';
 import items from '../DataHasil';
 import axios from 'axios';
 
@@ -39,53 +39,34 @@ const HasilKiri = (props) => {
     ]);
 
     useEffect(() => {
-        axios.get("http://localhost:4000/api/getHasilRiasec")
-    .then(({ data}) => setHasil(data)) // <-- set state
-    .catch(e => console.log(e))
-      });
+        const fetchData = async () => {
+            const response = await axios.get(`http://localhost:4000/api/getHasilRiasec/${localStorage.getItem("id")}`)
+                .catch(e => console.log(e))
+            setHasil(response.data)
+        }
+        fetchData();
+    }, []);
 
-    console.log(props)
-  return (
-    <div className='HasilKiri'>
-        {/* {items.map(() => {
-            return(
-                return
-            )
-        })} */}
-        {/* <Navbar /> */}
-        <div className='hasilContainer'>
-            {items.map((item) => {
-                return(
-                    <HasilChild 
-                        key={item.id}
-                        icon={item.icon}
-                        skill={item.skill}
-                        percentage={hasil[item.id - 1].percentage}
-                        batas={item.batas}
-                        penjelasan={item.penjelasan}
-                        ubahKanan={props.ubahKanan}
-                    />
-                )
-            })}
+    return (
+        <div className='HasilKiri'>
+            <div className='hasilContainer'>
+                {items.map((item) => {
+                    return (
+                        <HasilChild
+                            key={item.id}
+                            icon={item.icon}
+                            skill={item.skill}
+                            percentage={hasil[item.id - 1].percentage}
+                            batas={item.batas}
+                            penjelasan={item.penjelasan}
+                            ubahKanan={props.ubahKanan}
+                        />
+                    )
+                })}
 
+            </div>
         </div>
-        {/* <div className='hasilContainer'>
-            <HasilChild />
-        </div>
-        <div className='hasilContainer'>
-            <HasilChild />
-        </div>
-        <div className='hasilContainer'>
-            <HasilChild />
-        </div>
-        <div className='hasilContainer'>
-            <HasilChild />
-        </div>
-        <div className='hasilContainer'>
-            <HasilChild />
-        </div> */}
-    </div>
-  )
+    )
 }
 
 export default HasilKiri

@@ -1,5 +1,4 @@
 import React from 'react'
-import playHasil from './Pic/playHasil.svg';
 import {BsPlayCircle} from 'react-icons/bs';
 import simbol from './Pic/simbol.png';
 
