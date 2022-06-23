@@ -5,11 +5,13 @@ import simbol from '../Pic/simbol.png';
 import GayaBelajar from '../Pic/GayaBelajar.png';
 import jurusanSMA from '../Pic/jurusanSMA.png';
 import jurusanKuliah from '../Pic/jurusanKuliah.png';
-import { Link, Navigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const PilihanTes = () => {
+  const navigate = useNavigate();
   const handlePageKuliah = () => {
+    console.log('halo');
     const hasilRiasecUSer = axios.get(`http://localhost:4000/api/tampilanRiasec/${localStorage.getItem("id")}`)
       .catch(e => console.log(e))
       const hasilRiasec = [
@@ -38,14 +40,14 @@ const PilihanTes = () => {
             percentage: '0%',
         },
     ];
-
+    console.log(hasilRiasecUSer)
     if (hasilRiasecUSer == hasilRiasec){
-      <Navigate to={"/TesKuliah"} />
+      navigate("/TesKuliah");
     }else{
-      <Navigate to={"/hasil"} />
+      navigate("/hasil");
     }
   }
-  
+
   return (
       <div className='PilihanTes'>
           <Navbar />
