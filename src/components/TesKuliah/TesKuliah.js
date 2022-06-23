@@ -172,6 +172,7 @@ export default function Tes() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [showScore, setShowScore] = useState(false);
     const [scores, setScore] = useState({ R: 0, I: 0, A: 0, S: 0, E: 0, C: 0 });
+    const [idhasil, setIdHasil] = useState(0);
 
     const handleAnswerOptionClick = (isCorrect, type) => {
         const nextQuestion = currentQuestion + 1;
@@ -186,6 +187,8 @@ export default function Tes() {
             setScore({ ...scores, [type]: specific_value })
         }
         if (nextQuestion == questions.length) {
+            // const idHasill = idhasil + 1;
+            // setIdHasil(idHasill);
 
             const response = axios.post(`http://localhost:4000/api/updateRiasec/${localStorage.getItem("id")}`, {
                 hasilRiasec: [
