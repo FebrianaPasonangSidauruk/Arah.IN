@@ -13,7 +13,7 @@ const HasilChild = ({key, icon, skill, percentage, batas, penjelasan, ubahKanan}
             opacity: 1,
             width: `${percentage}`,
           };
-          console.log(newStyle);
+          // console.log(newStyle);
           setStyle(newStyle);
         }, 1000);
         

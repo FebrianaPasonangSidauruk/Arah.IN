@@ -10,10 +10,9 @@ import axios from 'axios';
 
 const PilihanTes = () => {
   const navigate = useNavigate();
-  const handlePageKuliah = () => {
-    console.log('halo');
-    const hasilRiasecUSer = axios.get(`http://localhost:4000/api/tampilanRiasec/${localStorage.getItem("id")}`)
-      .catch(e => console.log(e))
+  const handlePageKuliah = async () => {
+    try{
+    const hasilRiasecUSer = await axios.get(`http://localhost:4000/api/tampilanRiasec/${localStorage.getItem("id")}`)
       const hasilRiasec = [
         {
             id: '1',
@@ -40,13 +39,20 @@ const PilihanTes = () => {
             percentage: '0%',
         },
     ];
-    console.log(hasilRiasecUSer)
-    if (hasilRiasecUSer == hasilRiasec){
-      navigate("/TesKuliah");
-    }else{
-      navigate("/hasil");
-    }
+    console.log(hasilRiasecUSer.data)
+    console.log(hasilRiasec)
+    // for(var i=0;i<hasilRiasec.length;i++){
+    //   console.log(hasilRiasecUSer.data[i])
+
+      if (JSON.stringify(hasilRiasecUSer.data) === JSON.stringify(hasilRiasec)){
+        navigate("/TesKuliah");
+      }else{
+        navigate("/hasil");
+      }
+    // }
   }
+  catch(e){console.error(e)}
+  } 
 
   return (
       <div className='PilihanTes'>
