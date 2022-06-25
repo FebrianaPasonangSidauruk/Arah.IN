@@ -1,0 +1,76 @@
+.hasilChildGB{
+    /* padding-bottom: 5%; */
+    width: 100%;
+    
+    
+}
+
+.hasil-content{
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2%;
+    background-color:#FBF7EC ;
+}
+
+.atas, .tengah{
+    width: 100%;
+}
+
+.atas h1{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    color: #571E1E;
+}
+
+.atas .icon{
+    text-align: right;
+    cursor: pointer;
+    height: 100%;
+}
+
+.skill-bar{
+    /* align-items: center; */
+    width: 100%;
+    height: 10%;
+    border-radius: 20px;
+    background-color: #FFEBC5;
+    padding: 0.3rem;
+}
+
+.progress{
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: width .5s;
+    opacity: 1;
+    background: linear-gradient(to right, #5d001f, #8c1b2a, #C88859, #ea9c64   );
+}
+
+.progress span{
+    line-height: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 0.3rem;
+}
+
+.bawah{
+    width: 70%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* buat center horizontal*/
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bawah img{
+    width: 100%;
+}
+

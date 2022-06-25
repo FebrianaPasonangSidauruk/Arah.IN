@@ -47,12 +47,46 @@ const PilihanTes = () => {
       if (JSON.stringify(hasilRiasecUSer.data) === JSON.stringify(hasilRiasec)){
         navigate("/TesKuliah");
       }else{
-        navigate("/hasil");
+        navigate("/hasilKuliah");
       }
     // }
   }
   catch(e){console.error(e)}
   } 
+
+  //Gaya Belajar handling
+  const handlePageGayaBelajar = async () => {
+    try{
+    const hasilGayaBelajarUser = await axios.get(`http://localhost:4000/api/tampilanGayaBelajar/${localStorage.getItem("id")}`)
+      const hasilGayaBelajar = [
+        {
+            id: '1',
+            percentage: '0%',
+        },
+        {
+            id: '2',
+            percentage: '0%',
+        },
+        {
+            id: '3',
+            percentage: '0%',
+        },
+    ];
+    console.log(hasilGayaBelajarUser.data)
+    console.log(hasilGayaBelajar)
+    // for(var i=0;i<hasilRiasec.length;i++){
+    //   console.log(hasilRiasecUSer.data[i])
+
+      if (JSON.stringify(hasilGayaBelajarUser.data) === JSON.stringify(hasilGayaBelajar)){
+        navigate("/tesGayaBelajar");
+      }else{
+        navigate("/hasilGayaBelajar");
+      }
+    // }
+  }
+  catch(e){console.error(e)}
+  } 
+
 
   return (
       <div className='PilihanTes'>
@@ -64,9 +98,9 @@ const PilihanTes = () => {
                 <div className='JenisTes'>
                 <img src={GayaBelajar} />
                 </div>
-                <Link to="/TesGayaBelajar">
-                        <button className="tombol"> Gaya Belajar </button>
-                        </Link>
+                {/* <Link to="/TesGayaBelajar"> */}
+                        <button className="tombol" onClick={()=> handlePageGayaBelajar()}> Gaya Belajar </button>
+                        {/* </Link> */}
                 </div>
                 <div className='Box'>
                 <div className='JenisTes'>

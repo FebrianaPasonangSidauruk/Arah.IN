@@ -1,0 +1,28 @@
+.HasilKiriGB{
+    background-image: url(/src/components/Pic/background2.png); 
+    min-height: 100%;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    /* width: 100vw; */
+    background-size: 300px;
+    
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+ }
+
+.hasilContainer{
+    width: 100%;
+    /* height : auto; */
+    /* padding: 1rem; */
+    /* border-radius: 10px; */
+    /* display: flex;
+    flex-direction: column;
+    background-color:#FBF7EC ;
+    justify-content: center;
+    padding-left: 5%;
+    padding-top: 2rem; */
+}
+

@@ -8,10 +8,11 @@ import TesKuliah from './components/TesKuliah/TesKuliah';
 import TesGayaBelajar from './components/TesGayaBelajar/TesGayaBelajar';
 import TesSMA from './components/TesSMA/TesSMA';
 import PilihanTes from './components/PilihanTes/PilihanTes';
-import Hasil from './components/Hasil/Hasil';
+import HasilTesKuliah from './components/HasilTesKuliah/HasilTesKuliah';
 import Penjelasan from './components/Penjelasan/Penjelasan';
 import JenisTes from './components/JenisTes/JenisTes';
 import NotFound from './components/NotFound';
+import HasilTesGayaBelajar from './components/HasilTesGayaBelajar/HasilTesGayaBelajar';
 
 
 //fonts
@@ -48,7 +49,8 @@ function App() {
           <Route path="/tesKuliah" exact element={<TesKuliah />} />
           <Route path="/tesSMA" exact element={<TesSMA />} />
           <Route path="/tesGayaBelajar" exact element={<TesGayaBelajar />} />
-          <Route path="/hasil" exact element={<Hasil />} />
+          <Route path="/hasilKuliah" exact element={<HasilTesKuliah />} />
+          <Route path="/hasilGayaBelajar" exact element={<HasilTesGayaBelajar />} />
           <Route path="/penjelasan" exact element={<Penjelasan />} />
           <Route path="/jenistes" exact element={<JenisTes />} />
         </>

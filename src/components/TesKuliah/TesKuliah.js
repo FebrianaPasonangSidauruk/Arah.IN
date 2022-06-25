@@ -168,11 +168,9 @@ export default function Tes() {
         },
     ];
 
-    const [openBatal, setOpenBatal] = useState(false);
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [showScore, setShowScore] = useState(false);
     const [scores, setScore] = useState({ R: 0, I: 0, A: 0, S: 0, E: 0, C: 0 });
-    const [idhasil, setIdHasil] = useState(0);
 
     const handleAnswerOptionClick = (isCorrect, type) => {
         const nextQuestion = currentQuestion + 1;
