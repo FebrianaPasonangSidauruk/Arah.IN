@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import './HasilKiriGB.css';
-import './HasilChildGB';
 import HasilChildGB from './HasilChildGB';
 import simbol from '../Pic/simbol.png';
 import tesGayaBelajar from '../TesGayaBelajar/TesGayaBelajar';
@@ -40,7 +39,7 @@ const HasilKiriGB = (props) => {
                 {itemsGB.map((item) => {
                     return (
                         <HasilChildGB
-                            key={item.id}
+                            keyGB={item.id}
                             icon={item.icon}
                             skill={item.skill}
                             percentage={hasil[item.id - 1].percentage}

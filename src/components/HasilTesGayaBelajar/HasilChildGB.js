@@ -4,7 +4,7 @@ import './HasilChildGB.css'
 import { Link } from 'react-router-dom';
 import simbol from '../Pic/simbol.png';
 
-const HasilChildGB = ({key, icon, skill, percentage, batas, penjelasan, ubahKanan}) => {
+const HasilChildGB = ({keyGB, icon, skill, percentage, batas, penjelasan, ubahKanan}) => {
     const [style, setStyle] = useState ()
 
     useEffect(() => {

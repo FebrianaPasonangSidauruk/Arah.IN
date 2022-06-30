@@ -166,6 +166,166 @@ export default function Tes() {
                 },
             ],
         },
+        {
+            questionNumber: 11,
+            questionText: 'Saya suka untuk bereksperimen',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'I',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 12,
+            questionText: 'Saya suka mengajar ataupun melatih orang lain',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'S',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 13,
+            questionText: 'Saya gemar mencoba untuk membantu orang lain dalam memecahkan masalahnya',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'S',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 14,
+            questionText: 'Saya suka merawat hewan',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'R',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 15,
+            questionText: 'Saya tidak masalah untuk bekerja selama 8 jam perhari di kantor',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'C',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 16,
+            questionText: 'Saya suka menjual sesuatu',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'E',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 17,
+            questionText: 'Saya suka menulis kreatif',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'A',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 18,
+            questionText: 'Saya menikmati pelajaran sains',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'I',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 19,
+            questionText: 'Saya cepat dalam mengambil tanggung jawab yang baru',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'E',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 20,
+            questionText: 'Saya tertarik dalam menyembuhkan orang lain',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'S',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
     ];
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -241,7 +401,7 @@ export default function Tes() {
             <div className='app'>
                 {showScore ? (
                     <div className='score-section'>
-                        <Link to="/hasil">
+                        <Link to="/hasilKuliah">
                             <button className="tombolHasil"> Cek Hasil! </button>
                         </Link>
                     </div>

@@ -74,8 +74,6 @@ const PilihanTes = () => {
     ];
     console.log(hasilGayaBelajarUser.data)
     console.log(hasilGayaBelajar)
-    // for(var i=0;i<hasilRiasec.length;i++){
-    //   console.log(hasilRiasecUSer.data[i])
 
       if (JSON.stringify(hasilGayaBelajarUser.data) === JSON.stringify(hasilGayaBelajar)){
         navigate("/tesGayaBelajar");

@@ -8,7 +8,7 @@ export default function TesGayaBelajar(){
   const questionsGayaBelajar = [
     {
         questionNumber: 1,
-        questionText: 'Saya suka bekerja menggunakan kendaraan',
+        questionText: 'Ketika saya mempelajari bagaimana menggunakan komputer, saya akan membaca terlebih dahulu guide book-nya',
         answerOptions: [
             {
                 answerText: 'Setuju',
@@ -24,7 +24,7 @@ export default function TesGayaBelajar(){
     },
     {
         questionNumber: 2,
-        questionText: 'Saya suka bermain puzzle/teka-teki',
+        questionText: 'Saat mencari jalan ke tempat yang baru, saya merasa lebih mudah untuk mempunyai seseorang untuk mengatakan cara kesana',
         answerOptions: [
             {
                 answerText: 'Setuju',
@@ -40,7 +40,7 @@ export default function TesGayaBelajar(){
     },
     {
         questionNumber: 3,
-        questionText: 'Saya ahli dalam bekerja secara mandiri',
+        questionText: 'Untuk mengingat nomor telepon, saya mengingat nomornya dari pola angka ketika ditekan pada keypad',
         answerOptions: [
             {
                 answerText: 'Setuju',
@@ -56,7 +56,7 @@ export default function TesGayaBelajar(){
     },
     {
         questionNumber: 4,
-        questionText: 'Saya suka bekerja dalam tim',
+        questionText: 'Dalam bersantai, saya suka membaca buku atau majalah',
         answerOptions: [
             {
                 answerText: 'Setuju',
@@ -72,7 +72,7 @@ export default function TesGayaBelajar(){
     },
     {
         questionNumber: 5,
-        questionText: 'Saya adalah orang yang ambisius, saya akan mengatur segala tujuan saya',
+        questionText: 'Sebelum mengikuti tes, saya biasanya membaca dan mengatakan pikiran/informasi dengan lantang ataupun tenang',
         answerOptions: [
             {
                 answerText: 'Setuju',
@@ -88,7 +88,7 @@ export default function TesGayaBelajar(){
     },
     {
         questionNumber: 6,
-        questionText: 'Saya suka untuk mengatur berbagai hal seperti file, meja kerja',
+        questionText: 'Lebih mudah untuk mengingat kejadian',
         answerOptions: [
             {
                 answerText: 'Setuju',
@@ -104,7 +104,7 @@ export default function TesGayaBelajar(){
     },
     {
         questionNumber: 7,
-        questionText: 'Saya suka untuk membangun sesuatu',
+        questionText: 'Dikelas, hal yang paling penting adalah mempunyai catatan yang penuh dengan gambar, grafik, dan diagram',
         answerOptions: [
             {
                 answerText: 'Setuju',
@@ -120,7 +120,7 @@ export default function TesGayaBelajar(){
     },
     {
         questionNumber: 8,
-        questionText: 'Saya suka membaca berbagai hal tentang seni dan musik',
+        questionText: 'Ketika saya kehilangan arah, saya akan menelpon atau bertanya pada orang',
         answerOptions: [
             {
                 answerText: 'Setuju',
@@ -136,7 +136,7 @@ export default function TesGayaBelajar(){
     },
     {
         questionNumber: 9,
-        questionText: 'Saya suka mengikuti instruksi yang jelas',
+        questionText: 'Ketika memasak saya memasukkan semua bahan dan biasanya hasilnya baik',
         answerOptions: [
             {
                 answerText: 'Setuju',
@@ -152,7 +152,7 @@ export default function TesGayaBelajar(){
     },
     {
         questionNumber: 10,
-        questionText: 'Saya suka untuk mencoba meng-influence orang-orang',
+        questionText: 'Dalam merangkai mainan saya biasanya baca instruksi dahulu',
         answerOptions: [
             {
                 answerText: 'Setuju',
@@ -166,6 +166,102 @@ export default function TesGayaBelajar(){
             },
         ],
     },
+    {
+        questionNumber: 11,
+        questionText: 'Saat memecahkan masalah, lebih baik mencoba untuk memecahkannya sendiri',
+        answerOptions: [
+            {
+                answerText: 'Setuju',
+                type: 'Kinesthetic',
+                isCorrect: true
+            },
+            {
+                answerText: 'Tidak Setuju',
+                type: '',
+                isCorrect: false
+            },
+        ],
+    },
+    {
+        questionNumber: 12,
+        questionText: 'Ketika libur, saya lebih suka melakukan',
+        answerOptions: [
+            {
+                answerText: 'Aktivitas atletik/kegiatan di luar',
+                type: 'Kinesthetic',
+                isCorrect: true
+            },
+            {
+                answerText: 'Menonton film',
+                type: 'Visual',
+                isCorrect: true
+            },
+            {
+                answerText: 'Ke konser',
+                type: 'Auditory',
+                isCorrect: true
+            },
+        ],
+    },
+    {
+        questionNumber: 13,
+        questionText: 'Ketika saya bertemu seseorang, saya biasanya mengingat...',
+        answerOptions: [
+            {
+                answerText: 'Bagaimana penampilannya',
+                type: 'Visual',
+                isCorrect: true
+            },
+            {
+                answerText: 'Apa yang dia bicarakan',
+                type: 'Auditory',
+                isCorrect: true
+            },
+            {
+                answerText: 'Apa yang dia lakukan',
+                type: 'Kinesthetic',
+                isCorrect: true
+            },
+        ],
+    },
+    {
+        questionNumber: 14,
+        questionText: 'Ketika saya mencoba berkonsentrasi, saya bisa terdistraksi dengan orang atau benda disekitar saya',
+        answerOptions: [
+            {
+                answerText: 'Setuju',
+                type: 'Visual',
+                isCorrect: true
+            },
+            {
+                answerText: 'Tidak Setuju',
+                type: '',
+                isCorrect: false
+            },
+        ],
+    },
+    {
+        questionNumber: 15,
+        questionText: 'Saya lebih menyukai',
+        answerOptions: [
+            {
+                answerText: 'Seni',
+                type: 'Visual',
+                isCorrect: true
+            },
+            {
+                answerText: 'Musik',
+                type: 'Auditory',
+                isCorrect: true
+            },
+            {
+                answerText: 'Tarian',
+                type: 'Kinesthetic',
+                isCorrect: true
+            },
+        ],
+    },
+    
 ];
 
 const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -189,7 +285,7 @@ const handleAnswerOptionClick = (isCorrect, type) => {
         // setIdHasil(idHasill);
 
         const response = axios.post(`http://localhost:4000/api/updateGayaBelajar/${localStorage.getItem("id")}`, {
-            hasilRiasec: [
+            hasilGayaBelajar: [
                 {
                     id: '1',
                     skill: 'Visual',

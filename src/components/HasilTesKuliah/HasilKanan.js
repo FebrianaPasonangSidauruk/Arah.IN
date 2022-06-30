@@ -39,7 +39,7 @@ const HasilKanan = (props) => {
                     <p>{props.penjelasan}</p>
                 </div>
                 <div className='buttons'>
-                <Link to="/tes">
+                <Link to="/tesKuliah">
                     <button className="btn" onClick={() => {
                     }}
                     > 
