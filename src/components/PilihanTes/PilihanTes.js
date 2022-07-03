@@ -86,6 +86,49 @@ const PilihanTes = () => {
   } 
 
 
+  // Tes Peminatan SMA Handling
+  const handlePageSMA = async () => {
+    try{
+    const hasilSMAUser = await axios.get(`http://localhost:4000/api/tampilanSMA/${localStorage.getItem("id")}`)
+      const hasilSMA = [
+        {
+            id: '1',
+            percentage: '0%',
+        },
+        {
+            id: '2',
+            percentage: '0%',
+        },
+        {
+            id: '3',
+            percentage: '0%',
+        },
+        {
+          id: '4',
+          percentage: '0%',
+        },
+        {
+            id: '5',
+            percentage: '0%',
+        },
+        {
+          id: '6',
+          percentage: '0%',
+        },
+    ];
+    console.log(hasilSMAUser.data)
+    console.log(hasilSMA)
+
+      if (JSON.stringify(hasilSMAUser.data) === JSON.stringify(hasilSMA)){
+        navigate("/tesSMA");
+      }else{
+        navigate("/hasilSMA");
+      }
+    // }
+  }
+  catch(e){console.error(e)}
+  } 
+
   return (
       <div className='PilihanTes'>
           <Navbar />
@@ -104,9 +147,9 @@ const PilihanTes = () => {
                 <div className='JenisTes'>
                 <img src={jurusanSMA} />
                 </div>
-                <Link to="/TesSMA">
-                        <button className="tombol"> Peminatan SMA </button>
-                        </Link>
+                {/* <Link to="/TesSMA"> */}
+                        <button className="tombol" onClick={()=> handlePageSMA()}> Peminatan SMA </button>
+                        {/* </Link> */}
                 </div>
                 <div className='Box'>
                 <div className='JenisTes'>

@@ -9,7 +9,7 @@ var DataHasil = [
         skill: 'Realistic',
         percentage: '70%',
         batas:simbol,
-        penjelasan: 'Kamu adalah orang dengan tipe realistic, dimana kamu menikmati mengoperasikan alat,mesin, atau kendaraan. Orang dengan tipe ini cocok untuk kerja di outdoor, bekerja merawat hewan, merawat tanaman, dan berbagai pekerjaan detail lainnya. Jenis pekerjaan yang cocok seperti pilot, engineer, bidang Informasi Teknologi, petani, electrician. Untuk mengembangkan tipe ini, kamu bisa mendalami pelajaran Bahasa Inggris, Matematika, Teknologi, Computing, Agriculture, Horticulture, Bisnis, dan Science',
+        penjelasan: 'Kamu menikmati untuk mengoperasikan alat,mesin, atau kendaraan. Orang dengan tipe ini cocok untuk kerja di outdoor, bekerja merawat hewan, merawat tanaman, dan berbagai pekerjaan detail lainnya. Jenis pekerjaan yang cocok seperti pilot, engineer, bidang Informasi Teknologi, petani, electrician. Untuk mengembangkan tipe ini, kamu bisa mendalami pelajaran Bahasa Inggris, Matematika, Teknologi, Computing, Agriculture, Horticulture, Bisnis, dan Science',
     },
     {
         id: '2',

@@ -326,6 +326,358 @@ export default function Tes() {
                 },
             ],
         },
+        {
+            questionNumber: 21,
+            questionText: 'Saya tertarik untuk mencari tahu bagaimana suatu hal dapat bekerja',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'I',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 22,
+            questionText: 'Saya suka meletakkan barang-barang pada satu tempat atau menyatukannya',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'R',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 23,
+            questionText: 'Saya adalah orang yang kreatif',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'A',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 24,
+            questionText: 'Saya memperhatikan detail',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'C',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 25,
+            questionText: 'Saya suka mengetik',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'C',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 26,
+            questionText: 'Saya gemar menganalisa suatu masalah atau situasi',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'I',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 27,
+            questionText: 'Saya suka memainkan instrumen musik atau bernyanyi',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'A',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 28,
+            questionText: 'Saya menikmati pelajaran kultur budaya orang lain',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'S',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 29,
+            questionText: 'Saya ingin memulai bisnis saya sendiri',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'E',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 30,
+            questionText: 'Saya gemar memasak',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'R',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 31,
+            questionText: 'Saya suka berakting dalam drama',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'A',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 32,
+            questionText: 'Saya adalah seorang yang praktis',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'R',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 33,
+            questionText: 'Saya suka bekerja dengan angka atau diagram',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'I',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 34,
+            questionText: 'Saya suka berdiskusi mengenai isu-isu yang ada',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'S',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 35,
+            questionText: 'Saya baik dalam menyimpan catatan dari pekerjaan saya',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'C',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 36,
+            questionText: 'Saya suka untuk memimpin',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'E',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 37,
+            questionText: 'Saya suka bekerja di luar ruangan',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'R',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 38,
+            questionText: 'Saya lebih suka untuk bekerja dalam sebuah kantor',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'C',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 39,
+            questionText: 'Saya pandai dalam matematika',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'I',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 40,
+            questionText: 'Saya suka menolong orang lain',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'E',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 41,
+            questionText: 'Saya suka menggambar',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'A',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 42,
+            questionText: 'Saya suka memberikan pidato',
+            answerOptions: [
+                {
+                    answerText: 'Setuju',
+                    type: 'E',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak Setuju',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
     ];
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
