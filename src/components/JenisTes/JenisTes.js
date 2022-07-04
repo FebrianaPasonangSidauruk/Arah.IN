@@ -22,27 +22,22 @@ const JenisTes = () => {
         <Navbar />
     <div className='jenis-tes'>
         <div className='JenisTes-container'>
-                    {/* <div className='jenistes'> */}
+                        <Link to ='/penjelasanGayaBelajar'>
                         <div className='column-jenis'>
+
                         <div className='gambar-jenis'>
                             <img src={GayaBelajar} alt="gambar jenis tes" />
                         </div>
                         <div className='nama-tes'>
                             <h4>Gaya Belajar</h4>
-                            <div className='play' onClick={() => {
-                                setOpenModalGayaBlj(true);
-                                }}>
+                            <div className='play'>
                                     <BsPlayCircle/>
-                                {/* {openModalGayaBlj && <KeteranganJenisTes 
-                                closeModalGayaBlj={setOpenModalGayaBlj}
-                                />} */}
                             </div>
-                            {openModalGayaBlj && <KeteranganGayaBlj
-                                closeModalGayaBlj={setOpenModalGayaBlj}
-                                />}
                         </div>
                         </div>
+                        </Link>
 
+                        <Link to ='/penjelasanSMA'>
                         <div className='column-jenis'>
                         <div className='gambar-jenis'>
                             <img src={jurusanSMA} alt="gambar jenis tes" />
@@ -57,12 +52,14 @@ const JenisTes = () => {
                                 closeModalGayaBlj={setOpenModalGayaBlj}
                                 />} */}
                             </div>
-                            {openModalBdgSma && <KeteranganBdgSma
+                            {/* {openModalBdgSma && <KeteranganBdgSma
                                 closeModalBdgSma={setOpenModalBdgSma}
-                                />}
+                                />} */}
                         </div>
                         </div>
-
+                        </Link>
+                        
+                        <Link to ='/penjelasanKuliah'>
                         <div className='column-jenis'>
                         <div className='gambar-jenis'>
                             <img src={jurusanKuliah} alt="gambar jenis tes" />
@@ -78,12 +75,13 @@ const JenisTes = () => {
                                 closeModalGayaBlj={setOpenModalGayaBlj}
                                 />} */}
                             </div>
-                            {openModalKuliah && <KeteranganKuliah
+                            {/* {openModalKuliah && <KeteranganKuliah
                                 closeModalKuliah={setOpenModalKuliah}
-                                />}
+                                />} */}
                         </div>
                     </div>
-                    </div>
+                    </Link>
+                </div>
         </div>
         </div>
     // </div>

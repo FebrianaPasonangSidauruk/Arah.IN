@@ -1,0 +1,47 @@
+.penjelasanChild{
+    /* padding-bottom: 5%; */
+    width: 100%;
+    
+    
+}
+
+.penjelasan-content{
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2%;
+    background-color:#FBF7EC ;
+}
+
+.atas, .tengah{
+    width: 100%;
+}
+
+.atas h1{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    color: #571E1E;
+}
+
+/* .atas .icon{
+    text-align: right;
+    cursor: pointer;
+    height: 100%;
+} */
+
+
+.bawah{
+    width: 70%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* buat center horizontal*/
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bawah img{
+    width: 100%;
+}
+

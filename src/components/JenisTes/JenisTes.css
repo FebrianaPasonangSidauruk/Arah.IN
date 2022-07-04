@@ -92,8 +92,12 @@
         padding: 0.5rem;
         border-radius: 1rem;
         width: 50%;
-        cursor: pointer;
+        
         transition: 0.5s ease-in-out;
         background-color: brown;
+    }
+
+    .nama-tes{
+        cursor: pointer;
     }
   }

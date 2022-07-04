@@ -261,6 +261,112 @@ export default function TesGayaBelajar(){
             },
         ],
     },
+    {
+        questionNumber: 16,
+        questionText: 'Ketika saya baru belajar menggambar, biasanya saya meminta penjelasan dari teman',
+        answerOptions: [
+            {
+                answerText: 'Setuju',
+                type: 'Auditory',
+                isCorrect: true
+            },
+            {
+                answerText: 'Tidak Setuju',
+                type: '',
+                isCorrect: false
+            },
+        ],
+    },
+    {
+        questionNumber: 17,
+        questionText: 'Apabila saya mengajar orang lain, saya akan memberikan penjelasan secara lisan',
+        answerOptions: [
+            {
+                answerText: 'Setuju',
+                type: 'Auditory',
+                isCorrect: true
+            },
+            {
+                answerText: 'Tidak Setuju',
+                type: '',
+                isCorrect: false
+            },
+        ],
+    },
+    {
+        questionNumber: 18,
+        questionText: 'Ketika saya pergi berbelanja, saya meminta rekomendasi dengan karyawan toko',
+        answerOptions: [
+            {
+                answerText: 'Setuju',
+                type: 'Auditory',
+                isCorrect: true
+            },
+            {
+                answerText: 'Tidak Setuju',
+                type: '',
+                isCorrect: false
+            },
+        ],
+    },
+    {
+        questionNumber: 19,
+        questionText: 'Saat merencanakan liburan, saya biasanya membayangkan akan seperti apa jika ada di sana',
+        answerOptions: [
+            {
+                answerText: 'Setuju',
+                type: 'Kinesthetic',
+                isCorrect: true
+            },
+            {
+                answerText: 'Tidak Setuju',
+                type: '',
+                isCorrect: false
+            },
+        ],
+    },
+    {
+        questionNumber: 20,
+        questionText: 'Saya cenderung mengatakan',
+        answerOptions: [
+            {
+                answerText: 'Lihat bagaimanana saya melakukannya',
+                type: 'Visual',
+                isCorrect: true
+            },
+            {
+                answerText: 'Ayo dengarkan penjelasan saya',
+                type: 'Auditory',
+                isCorrect: true
+            },
+            {
+                answerText: 'Silahkan dikerjakan',
+                type: 'Kinesthetic',
+                isCorrect: true
+            },
+        ],
+    },
+    {
+        questionNumber: 21,
+        questionText: 'Ketika saya menonton sebuah band, saya biasanya...',
+        answerOptions: [
+            {
+                answerText: 'Melihat anggota band dan penonton lainnya',
+                type: 'Visual',
+                isCorrect: true
+            },
+            {
+                answerText: 'Mendengarkan lirik dan nada',
+                type: 'Auditory',
+                isCorrect: true
+            },
+            {
+                answerText: 'Terbawa dalam suasan dan musik',
+                type: 'Kinesthetic',
+                isCorrect: true
+            },
+        ],
+    },
     
 ];
 

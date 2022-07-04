@@ -1,0 +1,19 @@
+  .penjelasanGB-container{
+    display: flex;
+   max-width: 100vw;
+   height: 100%;
+   flex-direction: row;
+   overflow: hidden;
+}
+
+.rightSide-penjelasanGB{
+    height: 100%;
+   width: 50%;
+   flex-basis: 50%;
+}
+
+.leftSide-penjelasanGB{
+   height: 100vh;
+   width: 50%;
+   flex-basis: 50%;
+}

@@ -14,6 +14,10 @@ import JenisTes from './components/JenisTes/JenisTes';
 import NotFound from './components/NotFound';
 import HasilTesGayaBelajar from './components/HasilTesGayaBelajar/HasilTesGayaBelajar';
 import HasilTesSMA from './components/HasilTesSMA/HasilTesSMA';
+import PenjelasanTes from './components/PenjelasanJenisTes/PenjelasanTes';
+import PenjelasanGayaBelajar from './components/PenjelasanGayaBelajar/PenjelasanGayaBelajar';
+import PenjelasanSMA from './components/PenjelasanSMA/PenjelasanSMA';
+import PenjelasanKuliah from './components/PenjelasanKuliah/PenjelasanKuliah';
 
 
 //fonts
@@ -55,6 +59,10 @@ function App() {
           <Route path="/hasilGayaBelajar" exact element={<HasilTesGayaBelajar />} />
           <Route path="/penjelasan" exact element={<Penjelasan />} />
           <Route path="/jenistes" exact element={<JenisTes />} />
+          <Route path="/penjelasantes" exact element={<PenjelasanTes />} />
+          <Route path="/penjelasanGayaBelajar" exact element={<PenjelasanGayaBelajar />} />
+          <Route path="/penjelasanSMA" exact element={<PenjelasanSMA />} />
+          <Route path="/penjelasanKuliah" exact element={<PenjelasanKuliah />} />
         </>
       )}
       <Route path="*" exact element={<NotFound />}/>

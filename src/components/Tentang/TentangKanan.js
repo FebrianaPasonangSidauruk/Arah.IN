@@ -14,7 +14,7 @@ const TentangKanan = () => {
                     <img src={pembicaraTtg} />
                 </div>
                 <div className='box-penjelasantentang'>
-                    <p>Menjelaskan tentang aplikasi</p>
+                    <p>Aplikasi Arah.In adalah aplikasi yang membantu pelajar di tingkat SD, SMP, dan SMA dalam menentukan minat dan bakatnya. Terdapat 3 jenis tes yang bisa dicoba, yaitu Tes Gaya Belajar, Tes Peminatan SMA, dan Tes Jurusan Kuliah.</p>
                 </div>
             
                 <div className='border-tentang'>

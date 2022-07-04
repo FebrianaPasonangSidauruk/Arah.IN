@@ -9,7 +9,7 @@ var DataHasilGB = [
         skill: 'Visual',
         percentage: '70%',
         batas:simbol,
-        penjelasan: 'penjelasan Visual',
+        penjelasan: 'Gaya belajar visual dapat menyerap informasi dari apa yang dilihat oleh mata. Disarankan untuk menggunakan variasi warna ketika mencatat, memilih buku bacaan dengan banyak gambar ilustrasi dan warna menarik, dan mencatat kembali bahan pelajaran dengan warna dan gambar yang menarik.',
     },
     {
         id: '2',
@@ -17,7 +17,7 @@ var DataHasilGB = [
         skill: 'Auditory',
         percentage: '40%',
         batas:simbol,
-        penjelasan: 'penjelasan auditory',
+        penjelasan: 'Gaya belajar auditori yang menyerap informasi dengan cara mendengar. Disarankan menggunakan voice recorder saat mendengarkan penjelasan, mendengarkan buku audio, memperbanyak presentasi dan tanya jawab.',
     },
     {
         id: '3',
@@ -25,7 +25,7 @@ var DataHasilGB = [
         skill: 'Kinesthetic',
         percentage: '20%',
         batas:simbol,
-        penjelasan: 'penjelasan kinesthetic',
+        penjelasan: 'Gaya belajar kinesthetic ini menyerap informasi dengan berinteraksi atau mengalami hal-hal disekitarnya. Disarankan dalam belajar menggunakan gerakan gerakan atau eksperimen, hindari belajar yang monoton, dan melibatkan bermain peran dan praktikan',
     },
 ];
 
