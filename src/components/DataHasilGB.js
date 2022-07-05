@@ -5,7 +5,7 @@ import simbol from './Pic/simbol.png';
 var DataHasilGB = [
     {
         id: '1',
-        icon: <BsPlayCircle style={{ fill:'#B48336'}}/>,
+        icon: <BsPlayCircle style={{ fill:'#B48336', fontSize: "2em"}}/>,
         skill: 'Visual',
         percentage: '70%',
         batas:simbol,
@@ -13,7 +13,7 @@ var DataHasilGB = [
     },
     {
         id: '2',
-        icon: <BsPlayCircle style={{ fill:'#B48336'}}/>,
+        icon: <BsPlayCircle style={{ fill:'#B48336', fontSize: "2em"}}/>,
         skill: 'Auditory',
         percentage: '40%',
         batas:simbol,
@@ -21,7 +21,7 @@ var DataHasilGB = [
     },
     {
         id: '3',
-        icon: <BsPlayCircle style={{ fill:'#B48336'}}/>,
+        icon: <BsPlayCircle style={{ fill:'#B48336', fontSize: "2em"}}/>,
         skill: 'Kinesthetic',
         percentage: '20%',
         batas:simbol,

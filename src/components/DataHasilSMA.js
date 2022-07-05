@@ -5,7 +5,7 @@ import simbol from './Pic/simbol.png';
 var DataHasilSMA = [
     {
         id: '1',
-        icon: <BsPlayCircle style={{ fill:'#B48336'}}/>,
+        icon: <BsPlayCircle style={{ fill:'#B48336', fontSize: "2em"}}/>,
         skill: 'Fisika',
         percentage: '70%',
         batas:simbol,
@@ -13,7 +13,7 @@ var DataHasilSMA = [
     },
     {
         id: '2',
-        icon: <BsPlayCircle style={{ fill:'#B48336'}}/>,
+        icon: <BsPlayCircle style={{ fill:'#B48336', fontSize: "2em"}}/>,
         skill: 'Kimia',
         percentage: '40%',
         batas:simbol,
@@ -21,7 +21,7 @@ var DataHasilSMA = [
     },
     {
         id: '3',
-        icon: <BsPlayCircle style={{ fill:'#B48336'}}/>,
+        icon: <BsPlayCircle style={{ fill:'#B48336', fontSize: "2em"}}/>,
         skill: 'Biologi',
         percentage: '20%',
         batas:simbol,
@@ -29,7 +29,7 @@ var DataHasilSMA = [
     },
     {
         id: '4',
-        icon: <BsPlayCircle style={{ fill:'#B48336'}}/>,
+        icon: <BsPlayCircle style={{ fill:'#B48336', fontSize: "2em"}}/>,
         skill: 'Geografi',
         percentage: '20%',
         batas:simbol,
@@ -37,7 +37,7 @@ var DataHasilSMA = [
     },
     {
         id: '5',
-        icon: <BsPlayCircle style={{ fill:'#B48336'}}/>,
+        icon: <BsPlayCircle style={{ fill:'#B48336', fontSize: "2em"}}/>,
         skill: 'Ekonomi',
         percentage: '20%',
         batas:simbol,
@@ -45,7 +45,7 @@ var DataHasilSMA = [
     },
     {
         id: '6',
-        icon: <BsPlayCircle style={{ fill:'#B48336'}}/>,
+        icon: <BsPlayCircle style={{ fill:'#B48336', fontSize: "2em"}}/>,
         skill: 'Sosiologi',
         percentage: '20%',
         batas:simbol,
