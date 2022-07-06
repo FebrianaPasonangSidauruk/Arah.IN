@@ -25,16 +25,16 @@ function Navbar() {
         <img src={logoNavbar} />
         <div className='hiddenLinks'>
           <Link to="/"> Beranda </Link>
-          <Link to="/jenistes"> Tes </Link>
+          <Link to="/PilihanTes"> Tes </Link>
           <Link to="/Tentang"> Tentang </Link>
-          <div className="logout" onClick={handleLogout}>
+          {/* <div className="logout" onClick={handleLogout}>
             Logout
-          </div>
+          </div> */}
         </div>
       </div>
       <div className='rightSide'>
         <Link to="/"> Beranda </Link>
-        <Link to="/jenistes"> Tes </Link>
+        <Link to="/PilihanTes"> Tes </Link>
         <Link to="/Tentang"> Tentang </Link>
         <div className="logout" onClick={handleLogout}>
           Logout

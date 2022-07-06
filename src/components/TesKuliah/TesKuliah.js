@@ -678,6 +678,162 @@ export default function Tes() {
                 },
             ],
         },
+        {
+            questionNumber: 43,
+            questionText: 'Saya adalah orang yang...',
+            answerOptions: [
+                {
+                    answerText: 'Mengoperasikan alat dan memperbaikinya',
+                    type: 'R',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Memecahkan masalah yang abstrak',
+                    type: 'I',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Mengkreasikan visual suatu benda',
+                    type: 'A',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak di ketiganya',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 44,
+            questionText: 'Saya juga menganggap bahwa saya...',
+            answerOptions: [
+                {
+                    answerText: 'Suka mempersuasikan suatu tujuan',
+                    type: 'E',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Cenderung melakukan konseling dengan orang',
+                    type: 'S',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Mengorganisir dan membuat catatan',
+                    type: 'C',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak di ketiganya',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 45,
+            questionText: 'Saya merasa memiliki kemampuan dalam...',
+            answerOptions: [
+                {
+                    answerText: 'Bekerja secara fisik dan menggunakan mesin',
+                    type: 'R',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Pelajaran matematika, menganalisis, dan menulis',
+                    type: 'I',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Berimajinasi atau memiliki talenta di bidang musik',
+                    type: 'A',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak di ketiganya',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 46,
+            questionText: 'Saya merasa memiliki kemampuan lainnya dalam...',
+            answerOptions: [
+                {
+                    answerText: 'Mendengarkan dan berinteraksi dengan orang',
+                    type: 'S',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Public speaking dan memotivasi orang',
+                    type: 'E',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Bekerja dengan angka, menganalisis data dengan detail',
+                    type: 'C',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak di ketiganya',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 47,
+            questionText: 'Value dalam diri saya...',
+            answerOptions: [
+                {
+                    answerText: 'Praktis, memprioritaskan logika',
+                    type: 'R',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Independen, penasaran dengan berbagai hal',
+                    type: 'I',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Imaginatif, memprioritaskan orisinalitas',
+                    type: 'A',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak di ketiganya',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
+        {
+            questionNumber: 48,
+            questionText: 'Value lainnya dalam diri saya...',
+            answerOptions: [
+                {
+                    answerText: 'Kooperatif, suka membantu',
+                    type: 'S',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Berani mengambil resiko, influence',
+                    type: 'E',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Teliti, efisien',
+                    type: 'C',
+                    isCorrect: true
+                },
+                {
+                    answerText: 'Tidak di ketiganya',
+                    type: '',
+                    isCorrect: false
+                },
+            ],
+        },
     ];
 
     const [currentQuestion, setCurrentQuestion] = useState(0);

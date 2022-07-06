@@ -9,7 +9,10 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const PilihanTes = () => {
+  
   const navigate = useNavigate();
+
+  //Handle Tes Jurusan Kuliah
   const handlePageKuliah = async () => {
     try{
     const hasilRiasecUSer = await axios.get(`http://localhost:4000/api/tampilanRiasec/${localStorage.getItem("id")}`)
@@ -38,20 +41,17 @@ const PilihanTes = () => {
             id: '6',
             percentage: '0%',
         },
-    ];
-    console.log(hasilRiasecUSer.data)
-    console.log(hasilRiasec)
-    // for(var i=0;i<hasilRiasec.length;i++){
-    //   console.log(hasilRiasecUSer.data[i])
+      ];
+          console.log(hasilRiasecUSer.data)
+          console.log(hasilRiasec)
 
-      if (JSON.stringify(hasilRiasecUSer.data) === JSON.stringify(hasilRiasec)){
-        navigate("/TesKuliah");
-      }else{
-        navigate("/hasilKuliah");
+          if (JSON.stringify(hasilRiasecUSer.data) === JSON.stringify(hasilRiasec)){
+            navigate("/penjelasanKuliah");
+          }else{
+            navigate("/hasilKuliah");
+          }
       }
-    // }
-  }
-  catch(e){console.error(e)}
+          catch(e){console.error(e)}
   } 
 
   //Gaya Belajar handling
@@ -76,13 +76,12 @@ const PilihanTes = () => {
     console.log(hasilGayaBelajar)
 
       if (JSON.stringify(hasilGayaBelajarUser.data) === JSON.stringify(hasilGayaBelajar)){
-        navigate("/tesGayaBelajar");
+        navigate("/penjelasanGayaBelajar");
       }else{
         navigate("/hasilGayaBelajar");
       }
-    // }
   }
-  catch(e){console.error(e)}
+        catch(e){console.error(e)}
   } 
 
 
@@ -116,17 +115,16 @@ const PilihanTes = () => {
           percentage: '0%',
         },
     ];
-    console.log(hasilSMAUser.data)
-    console.log(hasilSMA)
+          console.log(hasilSMAUser.data)
+          console.log(hasilSMA)
 
-      if (JSON.stringify(hasilSMAUser.data) === JSON.stringify(hasilSMA)){
-        navigate("/tesSMA");
-      }else{
-        navigate("/hasilSMA");
+        if (JSON.stringify(hasilSMAUser.data) === JSON.stringify(hasilSMA)){
+          navigate("/penjelasanSMA");
+        }else{
+          navigate("/hasilSMA");
+        }
       }
-    // }
-  }
-  catch(e){console.error(e)}
+        catch(e){console.error(e)}
   } 
 
   return (
@@ -135,29 +133,23 @@ const PilihanTes = () => {
           <div className='Pilihan-container'>
               <div className='row new'>
                 <div className='Box'>
-                <simbol src={simbol} alt="Simbol"/>
-                <div className='JenisTes'>
-                <img src={GayaBelajar} />
-                </div>
-                {/* <Link to="/TesGayaBelajar"> */}
-                        <button className="tombol" onClick={()=> handlePageGayaBelajar()}> Gaya Belajar </button>
-                        {/* </Link> */}
+                    <simbol src={simbol} alt="Simbol"/>
+                    <div className='JenisTes'>
+                      <img src={GayaBelajar} />
+                    </div>
+                    <button className="tombol" onClick={()=> handlePageGayaBelajar()}> Gaya Belajar </button>
                 </div>
                 <div className='Box'>
-                <div className='JenisTes'>
-                <img src={jurusanSMA} />
-                </div>
-                {/* <Link to="/TesSMA"> */}
-                        <button className="tombol" onClick={()=> handlePageSMA()}> Peminatan SMA </button>
-                        {/* </Link> */}
+                    <div className='JenisTes'>
+                     <img src={jurusanSMA} />
+                    </div>
+                    <button className="tombol" onClick={()=> handlePageSMA()}> Peminatan SMA </button>
                 </div>
                 <div className='Box'>
-                <div className='JenisTes'>
-                <img src={jurusanKuliah} />
-                </div>
-                {/* <Link to="/TesKuliah"> */}
-                        <button className="tombol" onClick={()=> handlePageKuliah()}> Jurusan Kuliah </button>
-                        {/* </Link> */}
+                    <div className='JenisTes'>
+                      <img src={jurusanKuliah} />
+                    </div>
+                    <button className="tombol" onClick={()=> handlePageKuliah()}> Jurusan Kuliah </button>
                 </div>
               </div>
           </div>

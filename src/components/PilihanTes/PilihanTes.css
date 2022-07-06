@@ -51,7 +51,7 @@
     padding: 0 8rem; */
 }
 
-@media only screen and (max-width: 680px){
+@media only screen and (max-width: 780px){
     .Pilihan-container{
         flex-direction: column;
     }
@@ -75,6 +75,15 @@
     .tombol{
         margin: 2.5rem 0;
         margin-left: 10%;
+    }
+
+    .JenisTes{
+        width: 80%;
+        height:300px;
+        background-color: #C59B7B;
+        margin: 20px;
+        margin-top: 30%;
+        
     }
 }
 

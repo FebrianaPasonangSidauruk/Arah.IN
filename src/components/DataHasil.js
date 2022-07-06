@@ -9,7 +9,7 @@ var DataHasil = [
         skill: 'Realistic',
         percentage: '70%',
         batas:simbol,
-        penjelasan: 'Tipe Realistic menikmati untuk mengoperasikan alat, mesin, atau kendaraan. Tipe ini cocok untuk kerja di outdoor, bekerja merawat hewan, merawat tanaman, dan berbagai pekerjaan detail lainnya. Jenis pekerjaan yang cocok seperti pilot, engineer, bidang Informasi Teknologi, petani, electrician. Untuk mengembangkan tipe ini, kamu bisa mendalami pelajaran Bahasa Inggris, Matematika, Teknologi, Computing, Agriculture, Horticulture, Bisnis, dan Science',
+        penjelasan: 'Tipe Realistic menikmati untuk mengoperasikan alat, mesin, atau kendaraan. Tipe ini cocok untuk kerja di outdoor, bekerja merawat hewan, merawat tanaman, dan berbagai pekerjaan detail lainnya. Rekomendasi jurusan seperti paramedik veteriner, peternakan, tata boga, pertanian, pilot, Teknik Perkapalan, Teknik Sipil. Untuk mengembangkan tipe ini, kamu bisa mendalami pelajaran Bahasa Inggris, Matematika, Teknologi, Computing, Agriculture, Horticulture, Bisnis, dan Science',
     },
     {
         id: '2',
@@ -17,7 +17,7 @@ var DataHasil = [
         skill: 'Investigative',
         percentage: '40%',
         batas:simbol,
-        penjelasan: 'Tipe Investigative merupakan pengamat yang baik, gemar memecahkan masalah, dan kritis terhadap informasi yang didapat. Investigative cenderung suka aktivitas bidang keilmuan dan mengamati sesuatu mendalam. Pekerjaan yang cocok seperti peneliti, bidang medis dan kesehatan, dokter gigi, dokter, agrikultur, ilmu kelautan. Untuk mengembangkan tipe ini, kamu bisa mendalami pelajaran Bahasa Inggris, Matematika, Science, Computing, Teknologi. ',
+        penjelasan: 'Tipe Investigative merupakan pengamat yang baik, gemar memecahkan masalah, dan kritis terhadap informasi yang didapat. Investigative cenderung suka aktivitas bidang keilmuan dan mengamati sesuatu mendalam. Rekomendasi jurusan adalah Agrikultur, Teknik Elektro, Antropologi, Teknik Biomedis, Teknik Komputer, Matematika, Sosiologi, Farmasi, Kedokteran. Untuk mengembangkan tipe ini, kamu bisa mendalami pelajaran Bahasa Inggris, Matematika, Science, Computing, Teknologi. ',
     },
     {
         id: '3',
@@ -25,7 +25,7 @@ var DataHasil = [
         skill: 'Artistic',
         percentage: '20%',
         batas:simbol,
-        penjelasan: 'Tipe Artistic menyukai kegiatan kreatif seperti bermain peran, menulis, penciptaan seni, berimajinasi tinggi dengan cara pikir yang kreatif dan unik. Artistic cocok dengan pekerjaan seperti artist, ilustrator, photographer, penyanyi, penari, composer, reporter. Untuk mengembangkan tipe ini, kamu bisa mendalami pelajaran Bahasa Inggris, ilmu pengetahuan sosial, musik, drama, graphic design ',
+        penjelasan: 'Tipe Artistic menyukai kegiatan kreatif seperti bermain peran, menulis, penciptaan seni, berimajinasi tinggi dengan cara pikir yang kreatif dan unik. Artistic memiliki rekomendasi jurusan seperti Seni Teater, Arsitek, Tata Busana, DKV, Seni Musik, Bahasa dan Sastra.  Untuk mengembangkan tipe ini, kamu bisa mendalami pelajaran Bahasa Inggris, ilmu pengetahuan sosial, musik, drama, graphic design ',
     },
     {
         id: '4',
@@ -33,7 +33,7 @@ var DataHasil = [
         skill: 'Social',
         percentage: '30%',
         batas:simbol,
-        penjelasan: 'penjelasan social lalala',
+        penjelasan: 'Tipe Social ini suka bekerja dengan orang untuk mengajar, membantu, melayani, dan peduli terhadap kesejahteraan orang lain. Tipe Social menyukai hubungan interpersonal antar anggota tim dan tertarik dengan isu-isu sosial. Rekomendasi jurusan adalah Pendidikan Guru, Kepolisian, Psikologi, Ilmu Keperawatan. Kamu bisa mempelajari Ilmu Pengetahuan Sosial, Ilmu Pengetahuan Alam, Bisnis, Seni, Bahasa. ',
     },
     {
         id: '5',
@@ -41,7 +41,7 @@ var DataHasil = [
         skill: 'Enterprising',
         percentage: '60%',
         batas:simbol,
-        penjelasan: 'penjelasan enterprising lalala',
+        penjelasan: 'Tipe Enterprising suka bertemu dengan orang-orang, memimpin, berbicara dan mempersuasi orang untuk mencapai suatu tujuan, memotivasi orang lain agar lebih percaya diri dalam melakukan suatu hal, dan bekerja di bidang bisnis. Tipe ini cenderung mengincar posisi sebagai ketua atau pemimpin. Rekomendasi jurusan yaitu Manajemen, Marketing, Hukum, Ilmu Komunikasi, Sastra. Kamu dapat mendalami pelajaran Akuntansi, Ekonomi, Bisnis, Manajemen Informasi, Bahasa. ',
     },
     {
         id: '6',
@@ -49,7 +49,7 @@ var DataHasil = [
         skill: 'Conventional',
         percentage: '55%',
         batas:simbol,
-        penjelasan: 'penjelasan conventional lalala',
+        penjelasan: 'Tipe Conventional suka bekerja di dalam ruangan dan pada tugas-tugas melibatkan kualitas dan keakuratan, tipe ini dalam bekerja sangat teliti, mengikuti prosedur, berpikir kritis, dan menggunakan pendekatan yang analitis. Rekomendasi jurusan adalah Ilmu Komputer, Teknik Informatika, Statistika, Ilmu Administrasi, Ilmu Perpustakaan. Pelajaran yang didalami adalah Bahasa Inggris, Matematika, Akuntansi, Ekonomi.',
     },
 
 ];
