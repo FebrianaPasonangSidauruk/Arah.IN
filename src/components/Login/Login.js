@@ -17,7 +17,7 @@ const Login = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "http://localhost:4000/api/auth";
+			const url = "https://arahin1.herokuapp.com/api/auth";
 			const { data: res } = await axios.post(url, data);
 			localStorage.setItem("token", res.data.token);
 			localStorage.setItem("id", res.data.id);

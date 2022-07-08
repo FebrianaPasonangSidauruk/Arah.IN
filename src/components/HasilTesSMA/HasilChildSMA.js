@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import './HasilChildSMA.css'
 import simbol from '../Pic/simbol.png';
 
-const HasilChildSMA = ({keySMA, icon, skill, percentage, batas, penjelasan, ubahKanan}) => {
+const HasilChildSMA = ({keySMA, icon, skill, percentage, batas, penjelasan, ubahKanan, ubahKananSkill, ubahKananPercentage, ubahKananKalimat}) => {
     const [style, setStyle] = useState ()
 
     useEffect(() => {
@@ -16,13 +16,15 @@ const HasilChildSMA = ({keySMA, icon, skill, percentage, batas, penjelasan, ubah
         }, 1000);
         
     }, [percentage])
+
+    const penjkalimat = 'Persentase kecocokan kamu untuk peminatan SMA'
   
     return (
         <div className='hasilChildSMA'>
         <div className='hasil-content'>
           <div className='atas'>
             <h1>{skill}</h1>
-            <div className='icon' onClick={() => ubahKanan(penjelasan)}>
+            <div className='icon' onClick={() => {ubahKanan(penjelasan); ubahKananSkill(skill); ubahKananPercentage(percentage); ubahKananKalimat(penjkalimat)}}>
                   {/* <BsPlayCircle style={{fontSize:'3rem', color:'#B48336'}}/> */}
                   {icon}
           </div>

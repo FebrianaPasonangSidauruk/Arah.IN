@@ -13,6 +13,7 @@ const HasilKananSMA = (props) => {
         <img src={border} />
             <div className='bubble-text'>
                {/* <p id="ubahKanan">Penjelasan tentang hasil sesuai pilihan yang diklik Berikut dengan rekomendasi dan contoh jurusan apabila mengikuti tes jurusan</p>  */}
+               <p>{props.kalimat} {props.skill} {props.percentage} </p>
                 <p>{props.penjelasan}</p>
             </div>
             <div className='buttons'>
@@ -25,6 +26,9 @@ const HasilKananSMA = (props) => {
                 
             </Link>
             </div>
+            <div className='border-bawah'>
+                <img src={border} />
+                </div>
     </div>
 </div>
   )

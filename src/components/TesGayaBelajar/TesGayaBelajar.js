@@ -390,7 +390,7 @@ const handleAnswerOptionClick = (isCorrect, type) => {
         // const idHasill = idhasil + 1;
         // setIdHasil(idHasill);
 
-        const response = axios.post(`http://localhost:4000/api/updateGayaBelajar/${localStorage.getItem("id")}`, {
+        const response = axios.post(`https://arahin1.herokuapp.com/api/updateGayaBelajar/${localStorage.getItem("id")}`, {
             hasilGayaBelajar: [
                 {
                     id: '1',

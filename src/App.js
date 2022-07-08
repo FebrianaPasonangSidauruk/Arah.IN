@@ -18,7 +18,7 @@ import PenjelasanTes from './components/PenjelasanJenisTes/PenjelasanTes';
 import PenjelasanGayaBelajar from './components/PenjelasanGayaBelajar/PenjelasanGayaBelajar';
 import PenjelasanSMA from './components/PenjelasanSMA/PenjelasanSMA';
 import PenjelasanKuliah from './components/PenjelasanKuliah/PenjelasanKuliah';
-
+import TestingDeh from './components/Testing/TestingDeh';
 
 //fonts
 import './assets/fonts/RoseknightRegular-8ML5A.woff';
@@ -63,6 +63,7 @@ function App() {
           <Route path="/penjelasanGayaBelajar" exact element={<PenjelasanGayaBelajar />} />
           <Route path="/penjelasanSMA" exact element={<PenjelasanSMA />} />
           <Route path="/penjelasanKuliah" exact element={<PenjelasanKuliah />} />
+          <Route path="/testing" exact element={<TestingDeh />} />
         </>
       )}
       <Route path="*" exact element={<NotFound />}/>

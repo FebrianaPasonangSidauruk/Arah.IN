@@ -26,7 +26,7 @@ const HasilKiriGB = (props) => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await axios.get(`http://localhost:4000/api/getHasilGayaBelajar/${localStorage.getItem("id")}`)
+            const response = await axios.get(`https://arahin1.herokuapp.com/api/getHasilGayaBelajar/${localStorage.getItem("id")}`)
                 .catch(e => console.log(e))
             setHasil(response.data)
         }
@@ -36,6 +36,9 @@ const HasilKiriGB = (props) => {
   return (
     <div className='HasilKiriGB'>
             <div className='hasilContainer'>
+            <div className='judul'>
+      <h1>Persentase Kecocokan</h1>
+      </div>
                 {itemsGB.map((item) => {
                     return (
                         <HasilChildGB
@@ -46,6 +49,9 @@ const HasilKiriGB = (props) => {
                             batas={item.batas}
                             penjelasan={item.penjelasan}
                             ubahKanan={props.ubahKanan}
+                            ubahKananSkill={props.ubahKananSkill}
+                            ubahKananPercentage={props.ubahKananPercentage}
+                            ubahKananKalimat={props.ubahKananKalimat}
                         />
                     )
                 })}

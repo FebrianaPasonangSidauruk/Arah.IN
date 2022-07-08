@@ -856,7 +856,7 @@ export default function Tes() {
             // const idHasill = idhasil + 1;
             // setIdHasil(idHasill);
 
-            const response = axios.post(`http://localhost:4000/api/updateRiasec/${localStorage.getItem("id")}`, {
+            const response = axios.post(`https://arahin1.herokuapp.com/api/updateRiasec/${localStorage.getItem("id")}`, {
                 hasilRiasec: [
                     {
                         id: '1',

@@ -12,6 +12,9 @@
     justify-content: center;
     align-items: center; */
  }
+ .judul h1{
+    text-align: center;
+ }
 
 .hasilContainer{
     width: 100%;

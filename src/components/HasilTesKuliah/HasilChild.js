@@ -4,7 +4,7 @@ import './HasilChild.css'
 import { Link } from 'react-router-dom';
 import simbol from '../Pic/simbol.png';
 
-const HasilChild = ({key, icon, skill, percentage, batas, penjelasan, ubahKanan}) => {
+const HasilChild = ({key, icon, skill, percentage, batas, penjelasan, kalimat, ubahKanan, ubahKananSkill, ubahKananPercentage, ubahKananKalimat}) => {
     const [style, setStyle] = useState ()
 
     useEffect(() => {
@@ -19,13 +19,14 @@ const HasilChild = ({key, icon, skill, percentage, batas, penjelasan, ubahKanan}
         
     }, [percentage])
 
+    const penjkalimat = 'Persentase kecocokan kamu untuk tipe'
 
   return (
     <div className='hasilChild'>
         <div className='hasil-content'>
           <div className='atas'>
             <h1>{skill}</h1>
-            <div className='icon' onClick={() => ubahKanan(penjelasan)}>
+            <div className='icon' onClick={() => {ubahKanan(penjelasan); ubahKananSkill(skill); ubahKananPercentage(percentage); ubahKananKalimat(penjkalimat)}}>
                   {/* <BsPlayCircle style={{fontSize:'3rem', color:'#B48336'}}/> */}
                   {icon}
           </div>

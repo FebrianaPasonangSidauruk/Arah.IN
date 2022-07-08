@@ -13,6 +13,9 @@
     /* display: inline-block; */
     padding-top: 10%;
  }
+ .border-bawah{
+    transform: rotate(180deg);
+}
 
  .bubble-text{
     width:50%;

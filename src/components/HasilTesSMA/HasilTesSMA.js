@@ -10,15 +10,39 @@ const HasilTesSMA = () => {
   function handlePenjelasan(teks) {
     setPenjelasan(teks)
   }
+
+  const [kalimat, setkalimat] =useState();
+  function handleKalimat(teks){
+    setkalimat(teks)
+  }
+
+  const [skill, setSkill] =useState();
+  function handleSkill(teks){
+    setSkill(teks)
+  } 
+
+  const [percentage, setPercentage] = useState();
+  function handlePercentage(teks){
+    setPercentage(teks)
+  }
+
   return (
     <section>
     <Navbar /> 
     <div className='hasilTesSMA'>
         <div className='hasil-kiri'>
-          <HasilKiriSMA ubahKanan={handlePenjelasan}/>
+          <HasilKiriSMA ubahKanan={handlePenjelasan}
+                        ubahKananSkill={handleSkill}
+                        ubahKananPercentage={handlePercentage}
+                        ubahKananKalimat={handleKalimat}
+          />
         </div>
         <div className='hasil-kanan'>
-          <HasilKananSMA penjelasan={penjelasan}/>
+          <HasilKananSMA penjelasan={penjelasan}
+                          skill={skill}
+                          percentage={percentage}
+                          kalimat={kalimat}
+          />
         </div>
     </div>
   </section>

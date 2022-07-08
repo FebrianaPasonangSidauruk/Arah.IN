@@ -42,6 +42,10 @@
      transform: translateX(-50%);
  }
 
+
+ .border-bawah{
+    transform: rotate(180deg);
+}
 .buttons{
     width: 100%;
  }

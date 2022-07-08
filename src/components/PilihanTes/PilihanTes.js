@@ -9,13 +9,13 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const PilihanTes = () => {
-  
+
   const navigate = useNavigate();
 
   //Handle Tes Jurusan Kuliah
   const handlePageKuliah = async () => {
     try{
-    const hasilRiasecUSer = await axios.get(`http://localhost:4000/api/tampilanRiasec/${localStorage.getItem("id")}`)
+    const hasilRiasecUSer = await axios.get(`https://arahin1.herokuapp.com/api/tampilanRiasec/${localStorage.getItem("id")}`)
       const hasilRiasec = [
         {
             id: '1',
@@ -57,7 +57,7 @@ const PilihanTes = () => {
   //Gaya Belajar handling
   const handlePageGayaBelajar = async () => {
     try{
-    const hasilGayaBelajarUser = await axios.get(`http://localhost:4000/api/tampilanGayaBelajar/${localStorage.getItem("id")}`)
+    const hasilGayaBelajarUser = await axios.get(`https://arahin1.herokuapp.com/api/tampilanGayaBelajar/${localStorage.getItem("id")}`)
       const hasilGayaBelajar = [
         {
             id: '1',
@@ -88,7 +88,7 @@ const PilihanTes = () => {
   // Tes Peminatan SMA Handling
   const handlePageSMA = async () => {
     try{
-    const hasilSMAUser = await axios.get(`http://localhost:4000/api/tampilanSMA/${localStorage.getItem("id")}`)
+    const hasilSMAUser = await axios.get(`https://arahin1.herokuapp.com/api/tampilanSMA/${localStorage.getItem("id")}`)
       const hasilSMA = [
         {
             id: '1',
@@ -131,25 +131,25 @@ const PilihanTes = () => {
       <div className='PilihanTes'>
           <Navbar />
           <div className='Pilihan-container'>
-              <div className='row new'>
+              <div className='rownew'>
                 <div className='Box'>
                     <simbol src={simbol} alt="Simbol"/>
                     <div className='JenisTes'>
                       <img src={GayaBelajar} />
                     </div>
-                    <button className="tombol" onClick={()=> handlePageGayaBelajar()}> Gaya Belajar </button>
+                    <button className="tombolPilihan" onClick={()=> handlePageGayaBelajar()}> Gaya Belajar </button>
                 </div>
                 <div className='Box'>
                     <div className='JenisTes'>
                      <img src={jurusanSMA} />
                     </div>
-                    <button className="tombol" onClick={()=> handlePageSMA()}> Peminatan SMA </button>
+                    <button className="tombolPilihan" onClick={()=> handlePageSMA()}> Peminatan SMA </button>
                 </div>
                 <div className='Box'>
                     <div className='JenisTes'>
                       <img src={jurusanKuliah} />
                     </div>
-                    <button className="tombol" onClick={()=> handlePageKuliah()}> Jurusan Kuliah </button>
+                    <button className="tombolPilihan" onClick={()=> handlePageKuliah()}> Jurusan Kuliah </button>
                 </div>
               </div>
           </div>

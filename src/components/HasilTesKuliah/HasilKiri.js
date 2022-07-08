@@ -40,7 +40,7 @@ const HasilKiri = (props) => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await axios.get(`http://localhost:4000/api/getHasilRiasec/${localStorage.getItem("id")}`)
+            const response = await axios.get(`https://arahin1.herokuapp.com/api/getHasilRiasec/${localStorage.getItem("id")}`)
                 .catch(e => console.log(e))
             setHasil(response.data)
         }
@@ -50,6 +50,9 @@ const HasilKiri = (props) => {
     return (
         <div className='HasilKiri'>
             <div className='hasilContainer'>
+            <div className='judul'>
+      <h1>Persentase Kecocokan</h1>
+      </div>
                 {items.map((item) => {
                     return (
                         <HasilChild
@@ -59,7 +62,11 @@ const HasilKiri = (props) => {
                             percentage={hasil[item.id - 1].percentage}
                             batas={item.batas}
                             penjelasan={item.penjelasan}
+                            kalimat={item.kalimat}
                             ubahKanan={props.ubahKanan}
+                            ubahKananSkill={props.ubahKananSkill}
+                            ubahKananPercentage={props.ubahKananPercentage}
+                            ubahKananKalimat={props.ubahKananKalimat}
                         />
                     )
                 })}

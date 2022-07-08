@@ -66,6 +66,10 @@
     transform: translateX(-50%);
 }
 
+.border-bawah{
+    transform: rotate(180deg);
+}
+
 /* @media only screen and (max-width: 1000px){
     .hasilKanan img{
         width: 40%;

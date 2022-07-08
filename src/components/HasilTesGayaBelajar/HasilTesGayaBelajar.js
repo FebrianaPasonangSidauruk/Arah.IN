@@ -10,15 +10,39 @@ const HasilTesGayaBelajar = () => {
   function handlePenjelasan(teks) {
     setPenjelasan(teks)
   }
+
+  const [skill, setSkill] =useState();
+  function handleSkill(teks){
+    setSkill(teks)
+  } 
+
+  const [percentage, setPercentage] = useState();
+  function handlePercentage(teks){
+    setPercentage(teks)
+  }
+
+  const [kalimat, setkalimat] =useState();
+  function handleKalimat(teks){
+    setkalimat(teks)
+  }
+
   return (
     <section>
     <Navbar /> 
     <div className='hasilTesGayaBelajar'>
         <div className='hasil-kiri'>
-          <HasilKiriGB ubahKanan={handlePenjelasan}/>
+          <HasilKiriGB ubahKanan={handlePenjelasan}
+                        ubahKananSkill={handleSkill}
+                        ubahKananPercentage={handlePercentage}
+                        ubahKananKalimat={handleKalimat}
+          />
         </div>
         <div className='hasil-kanan'>
-          <HasilKananGB penjelasan={penjelasan}/>
+          <HasilKananGB penjelasan={penjelasan}
+                        skill={skill}
+                        percentage={percentage}
+                        kalimat={kalimat}
+          />
         </div>
     </div>
   </section>

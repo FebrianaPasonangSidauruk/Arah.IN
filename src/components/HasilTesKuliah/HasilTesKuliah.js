@@ -10,15 +10,40 @@ const Hasil = () => {
   function handlePenjelasan(teks) {
     setPenjelasan(teks)
   }
+
+  const [kalimat, setkalimat] =useState();
+  function handleKalimat(teks){
+    setkalimat(teks)
+  }
+
+  const [skill, setSkill] =useState();
+  function handleSkill(teks){
+    setSkill(teks)
+  } 
+
+  const [percentage, setPercentage] = useState();
+  function handlePercentage(teks){
+    setPercentage(teks)
+  }
+
+
   return (
   <section>
     <Navbar /> 
     <div className='hasil'>
         <div className='hasil-kiri'>
-          <HasilKiri ubahKanan={handlePenjelasan}/>
+          <HasilKiri ubahKanan={handlePenjelasan}
+                      ubahKananSkill={handleSkill}
+                      ubahKananPercentage={handlePercentage}
+                      ubahKananKalimat={handleKalimat}
+          />
         </div>
         <div className='hasil-kanan'>
-          <HasilKanan penjelasan={penjelasan}/>
+          <HasilKanan penjelasan={penjelasan}
+                      skill={skill}
+                      percentage={percentage}
+                      kalimat={kalimat}
+          />
         </div>
     </div>
   </section>
