@@ -517,7 +517,7 @@ const handleAnswerOptionClick = (isCorrect, type) => {
               
 
             ]
-        }, { withCredentials: true });
+        });
         setShowScore(true);
         return response
     }

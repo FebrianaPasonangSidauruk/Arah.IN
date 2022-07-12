@@ -408,7 +408,7 @@ const handleAnswerOptionClick = (isCorrect, type) => {
                     percentage: scores.Kinesthetic + "%",
                 },
             ]
-        }, { withCredentials: true });
+        });
         setShowScore(true);
         return response
     }

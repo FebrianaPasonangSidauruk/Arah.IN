@@ -889,7 +889,7 @@ export default function Tes() {
                         percentage: scores.C + "%",
                     },
                 ]
-            }, { withCredentials: true });
+            });
             setShowScore(true);
             return response
         }
