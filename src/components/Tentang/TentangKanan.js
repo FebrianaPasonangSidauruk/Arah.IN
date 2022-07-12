@@ -1,6 +1,6 @@
 import React from 'react'
 import borderTtg from '../Pic/border.png';
-import pembicaraTtg from '../Pic/pembicara.png';
+import pembicaraTtg from '../Pic/speaker.png';
 import './TentangKanan.css'
 
 const TentangKanan = () => {
